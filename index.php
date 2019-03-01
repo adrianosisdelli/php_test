@@ -1,5 +1,5 @@
 <?php 
-	$application_name = 'Test Api';
+$application_name = 'Test Api';
 ?>
 
 <!DOCTYPE html>
@@ -14,5 +14,15 @@
 <body style="font-family: Verdana; font-size: 12px;">
 	<h3><?php echo($application_name); ?></h3>
 	<p>Dados:</p>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$.ajax({url: "http://172.18.0.2/adriano.costa", success: function(result){
+				alert(result);
+			}});
+		});
+	</script>
 </body>
 </html>
