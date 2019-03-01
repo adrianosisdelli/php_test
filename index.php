@@ -29,10 +29,18 @@ $application_name = 'Test Api';
 					<td>Email</td>
 					<td id="document"></td>
 				</tr>
+				<tr>
+					<td>Key Pair</td>
+					<td id="key-pair"></td>
+				</tr>
+				<tr>
+					<td>Value</td>
+					<td id="value"></td>
+				</tr>
 			</table>
 		</div>
 	</div>
-	
+
 
 	<?php phpinfo(); ?>
 	
@@ -51,6 +59,8 @@ $application_name = 'Test Api';
 						$("#devName").html('<strong>' + data.developer + '</strong>');
 						$("#message").html('<strong>' + data.message + '</strong>');
 						$("#document").html('<strong>' + data.values[4].email + '</strong>');
+						$("#key-pair").html('<strong>' + data.values[5].key_pair + '</strong>');
+						$("#value").html('<strong>' + data.values[5].value + '</strong>');
 					},
 					error: function(data) {
 						alert(JSON.stringify(data));
