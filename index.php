@@ -5,10 +5,7 @@ $application_name = 'Test Api';
 <!DOCTYPE html>
 <html>
 <head>
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.slim.js"
-	integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 	<title><?php echo($application_name); ?></title>
 </head>
 <body style="font-family: Verdana; font-size: 12px;">
