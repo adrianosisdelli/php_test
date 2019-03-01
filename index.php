@@ -11,14 +11,18 @@ $application_name = 'Test Api';
 <body style="font-family: Verdana; font-size: 12px;">
 	<h3><?php echo($application_name); ?></h3>
 	<p>Dados:</p>
-
+	<button id="btnTeste">Teste</button>
 	<script type="text/javascript">
-		
 		$(document).ready(function(){
 
-			$.ajax({url: "http://172.18.0.2/adriano.costa", success: function(result){
-				alert(result);
-			}});
+			$("btnTeste").click(function(){
+				$.ajax({
+					url: 'adrsisdelli.ddns.net:3000/adriano.costa',
+					success: function(data) {
+						alert(data);
+					}
+				});
+			});
 		});
 	</script>
 </body>
