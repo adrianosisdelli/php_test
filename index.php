@@ -33,6 +33,9 @@ $application_name = 'Test Api';
 		</div>
 	</div>
 	
+
+	<?php phpinfo(); ?>
+	
 	<script type="text/javascript">
 		$(document).ready(function(){
 
